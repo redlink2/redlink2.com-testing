@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'panicsans';
+  src: url('panicsans.ttf');
+}
+
+* {
+    font-family: 'panicsans';
+}
+
+#grid-container {
+    height: 96vh;
+    width: 96vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 3px 2px;
+    grid-template-areas:
+        "leftarm leftarm leftarm rightarm rightarm rightarm"
+        "leftarm leftarm leftarm rightarm rightarm rightarm"
+        "leftarm leftarm leftarm rightarm rightarm rightarm"
+        "belly belly belly belly belly belly"
+        "belly belly belly belly belly belly"
+        "belly belly belly belly belly belly"
+        "feet feet feet feet feet feet";
+    text-align: center;
+    color: red;
+    border-style: dashed;
+    border-color: gray;
+}
+
+.border {
+    border-style: ridge;
+    border-width: 8px;
+    background-color: indigo;
+}
+
+#leftarm {
+    grid-area: leftarm;
+    color: forestGreen;
+    border-color: green;
+}
+
+#rightarm {
+    grid-area: rightarm;
+    color: teal;
+    border-color: blue;
+}
+
+#belly {
+    grid-area: belly;
+    color: firebrick;
+    border-color: red;
+}
+
+#flexy {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.links {
+    height: 100%;
+    width: 100%;
+    border-style: ridge;
+    border-top: 2px;
+    border-bottom: 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#left {
+    border-color: cyan;
+}
+
+#center {
+    border-color: magenta;
+}
+
+#right {
+    border-color: yellow;
+}
+
+.li {
+    padding: 20px;
+}
+
+#feet {
+    grid-area: feet;
+    color: orange;
+    border-color: yellow;
+}
+
+#search {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#searchbar {
+    height: 32px;
+    width: 500px;
+    border-width: 3px;
+    border-radius: 30px;
+    border-color: yellow;
+    font-family: panicsans;
+    font-size: 32px;
+}
