@@ -28,7 +28,6 @@ jobs:
         with:
           node-verison: 12
       - run: npm ci
-      - run: npm test
       - run: npm run build
       - run: npm run deploy
       # Runs a single command using the runners shell
