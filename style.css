@@ -7,13 +7,16 @@
     font-family: 'panicsans';
 }
 
+a {
+    font-size: 1.2em;
+}
+
 #grid-container {
     height: 96vh;
     width: 96vw;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(7, 1fr);
-    gap: 3px 2px;
     grid-template-areas:
         "leftarm leftarm leftarm rightarm rightarm rightarm"
         "leftarm leftarm leftarm rightarm rightarm rightarm"
@@ -30,7 +33,7 @@
 
 .border {
     border-style: ridge;
-    border-width: 8px;
+    border-width: 1vw;
     background-color: indigo;
 }
 
@@ -64,8 +67,8 @@
     height: 100%;
     width: 100%;
     border-style: ridge;
-    border-top: 2px;
-    border-bottom: 2px;
+    border-top: 1vh;
+    border-bottom: 1vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -103,11 +106,11 @@
 }
 
 #searchbar {
-    height: 32px;
-    width: 500px;
-    border-width: 3px;
-    border-radius: 30px;
+    height: 5vh;
+    width: 55vw;
+    border-width: .5vw;
+    border-radius: 8vh;
     border-color: yellow;
     font-family: panicsans;
-    font-size: 32px;
+    font-size: 2em;
 }
