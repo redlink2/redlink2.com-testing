@@ -28,8 +28,5 @@ jobs:
         with:
           node-verison: 12
       - run: npm ci
-      - run: npm run build
+      - run: npm run --verbose build
       - run: npm run deploy
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
