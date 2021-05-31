@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'panicsans';
+  src: url('panicsans.ttf');
+}
+
+* {
+    font-family: 'panicsans';
+}
+
+a {
+    font-size: 1.2em;
+}
+
+#grid-container {
+    height: 96vh;
+    width: 96vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+        "leftarm leftarm leftarm rightarm rightarm rightarm"
+        "leftarm leftarm leftarm rightarm rightarm rightarm"
+        "leftarm leftarm leftarm rightarm rightarm rightarm"
+        "belly belly belly belly belly belly"
+        "belly belly belly belly belly belly"
+        "belly belly belly belly belly belly"
+        "feet feet feet feet feet feet";
+    text-align: center;
+    color: red;
+    border-style: dashed;
+    border-color: gray;
+}
+
+.border {
+    border-style: ridge;
+    border-width: 1vw;
+    background-color: indigo;
+}
+
+#leftarm {
+    grid-area: leftarm;
+    color: forestGreen;
+    border-color: green;
+}
+
+#rightarm {
+    grid-area: rightarm;
+    color: teal;
+    border-color: blue;
+}
+
+#belly {
+    grid-area: belly;
+    color: firebrick;
+    border-color: red;
+}
+
+#flexy {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.links {
+    height: 100%;
+    width: 100%;
+    border-style: ridge;
+    border-top: 1vh;
+    border-bottom: 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#left {
+    border-color: cyan;
+}
+
+#center {
+    border-color: magenta;
+}
+
+#right {
+    border-color: yellow;
+}
+
+.li {
+    padding: 20px;
+}
+
+#feet {
+    grid-area: feet;
+    color: orange;
+    border-color: yellow;
+}
+
+#search {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#searchbar {
+    height: 5vh;
+    width: 55vw;
+    border-width: .5vw;
+    border-radius: 8vh;
+    border-color: yellow;
+    font-family: panicsans;
+    font-size: 2em;
+}
